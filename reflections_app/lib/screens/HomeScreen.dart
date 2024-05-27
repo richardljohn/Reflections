@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: (){},
               iconSize: 30.0,
               icon: const Icon(
-                // Icons.short_text_rounded,
+                Icons.short_text_rounded,
                 ),
               ),
           ],)
