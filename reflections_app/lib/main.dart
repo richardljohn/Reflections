@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import "package:flutter/services.dart";
 import "./screens/HomeScreen.dart";
+import "./screens/LoginScreen.dart";
 
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(
-    const SystemUiOverlayStyle(
-      statusBarColor: Colors.white,
-      statusBarIconBrightness: Brightness.dark,
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    statusBarColor: Colors.white,
+    statusBarIconBrightness: Brightness.dark,
   ));
   runApp(const Reflections());
 }
@@ -21,7 +21,11 @@ class Reflections extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: const HomeScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LoginScreen(),
+        '/home': (context) => HomeScreen(),
+      }
     );
   }
 }
