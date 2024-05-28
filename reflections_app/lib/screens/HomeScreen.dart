@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onPressed: () {},
         backgroundColor: Theme.of(context).colorScheme.primary,
         foregroundColor: Colors.white,
-        child: const Icon(Icons.add)
+        child: const Icon(Icons.add_rounded)
       ),
     );
   }
