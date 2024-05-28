@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import "package:flutter/services.dart";
 import "./screens/HomeScreen.dart";
 import "./screens/LoginScreen.dart";
-import "./screens/SignupScreen.dart"
+import "./screens/SignupScreen.dart";
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -18,16 +18,15 @@ class Reflections extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
-      ),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => LoginScreen(),
-        '/signup': (context) => SignupScreen(),
-        '/home': (context) => HomeScreen(),
-      }
-    );
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          scaffoldBackgroundColor: Colors.white,
+        ),
+        initialRoute: '/',
+        routes: {
+          '/': (context) => LoginScreen(),
+          '/signup': (context) => SignupScreen(),
+          '/home': (context) => HomeScreen(),
+        });
   }
 }
