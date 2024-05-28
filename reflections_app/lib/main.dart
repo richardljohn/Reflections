@@ -24,7 +24,7 @@ class Reflections extends StatelessWidget {
         ),
         initialRoute: '/',
         routes: {
-          '/': (context) => LoginScreen(),
+          '/': (context) => SignupScreen(),
           '/signup': (context) => SignupScreen(),
           '/home': (context) => HomeScreen(),
         });
