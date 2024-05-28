@@ -17,7 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login'),
+        title: Text('Reflections'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -48,7 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             TextButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/signup');
+                Navigator.pushNamed(context, '/home');
               },
               child: Text('Don\'t have an account? Sign Up'),
             ),
