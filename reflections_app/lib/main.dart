@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import "package:flutter/services.dart";
 import "./screens/HomeScreen.dart";
 import "./screens/LoginScreen.dart";
+import "./screens/SignupScreen.dart"
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -24,6 +25,7 @@ class Reflections extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => LoginScreen(),
+        '/signup': (context) => SignupScreen(),
         '/home': (context) => HomeScreen(),
       }
     );
