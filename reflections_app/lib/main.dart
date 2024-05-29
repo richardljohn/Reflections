@@ -5,7 +5,7 @@ import "./screens/LoginScreen.dart";
 import "./screens/SignupScreen.dart";
 
 void main() {
-    statusBarColor: Colors.white,
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarIconBrightness: Brightness.dark,
   ));
   runApp(const Reflections());
