@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
-  // @override
+  @override
   _LoginScreenState createState() => _LoginScreenState();
 }
 
