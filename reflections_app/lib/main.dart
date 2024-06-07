@@ -5,6 +5,8 @@ import "./screens/LoginScreen.dart";
 import "./screens/SignupScreen.dart";
 import "./screens/ProfileScreen.dart";
 import "./screens/JournalsScreen.dart";
+import "./screens/NewJournalEntryScreen.dart";
+import "./screens/StatsScreen.dart";
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -30,7 +32,10 @@ class Reflections extends StatelessWidget {
           '/': (context) => SignupScreen(),
           '/login': (context) => LoginScreen(),
           '/home': (context) => HomeScreen(),
+          '/profile': (context) => ProfileScreen(),
           '/journals': (context) => JournalsScreen(),
+          '/newjournal': (context) => NewJournalEntryScreen(),
+          '/stats': (context) => StatsScreen(),
         });
   }
 }
