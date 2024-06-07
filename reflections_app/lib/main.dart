@@ -3,7 +3,8 @@ import "package:flutter/services.dart";
 import "./screens/HomeScreen.dart";
 import "./screens/LoginScreen.dart";
 import "./screens/SignupScreen.dart";
-import "./screens/JournalsScreen.dart"
+import "./screens/ProfileScreen.dart";
+import "./screens/JournalsScreen.dart";
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(

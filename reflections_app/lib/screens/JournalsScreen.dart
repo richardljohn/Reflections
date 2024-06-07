@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class JournalsScreen extends StatefulWidget {
   @override
-  _JournalsScreenState createState() => _LoginScreenState();
+  _JournalsScreenState createState() => _JournalsScreenState();
 }
 
-class _LoginScreenState extends State<JournalsScreen> {
+class _JournalsScreenState extends State<JournalsScreen> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
 
