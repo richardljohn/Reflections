@@ -17,7 +17,7 @@ class _StatsScreenState extends State<StatsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Stats'),
+        title: Text('Your Stats'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
