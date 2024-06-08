@@ -36,6 +36,7 @@ class Reflections extends StatelessWidget {
           '/profile': (context) => ProfileScreen(),
           '/journals': (context) => JournalsScreen(),
           '/newjournal': (context) => NewJournalEntryScreen(),
+          '/updatejournalentry': (context) => UpdateJournalEntryScreen(),
           '/stats': (context) => StatsScreen(),
         });
   }
