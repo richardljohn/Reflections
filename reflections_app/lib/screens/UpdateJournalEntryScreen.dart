@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Screen extends StatefulWidget {
+class UpdateJournalEntryScreen extends StatefulWidget {
   @override
-  _StatsScreenState createState() => _StatsScreenState();
+  _UpdateJournalEntryScreenState createState() => _UpdateJournalEntryScreenState();
 }
 
-class _StatsScreenState extends State<StatsScreen> {
+class _UpdateJournalEntryScreenState extends State<UpdateJournalEntryScreen> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
 
