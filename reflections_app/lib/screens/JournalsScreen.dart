@@ -17,7 +17,7 @@ class _JournalsScreenState extends State<JournalsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Reflections'),
+        title: Text('Your Journals'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
