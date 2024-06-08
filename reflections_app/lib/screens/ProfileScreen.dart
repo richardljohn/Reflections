@@ -17,7 +17,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Reflections'),
+        title: Text('Profile'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
