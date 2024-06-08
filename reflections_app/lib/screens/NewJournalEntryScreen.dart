@@ -17,7 +17,7 @@ class _NewJournalEntryScreenState extends State<NewJournalEntryScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Reflections'),
+        title: Text('New Journal Entry'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
