@@ -6,6 +6,7 @@ import "./screens/SignupScreen.dart";
 import "./screens/ProfileScreen.dart";
 import "./screens/JournalsScreen.dart";
 import "./screens/NewJournalEntryScreen.dart";
+import "./screens/UpdateJournalEntryScreen.dart";
 import "./screens/StatsScreen.dart";
 
 void main() {
