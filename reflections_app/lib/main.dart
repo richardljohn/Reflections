@@ -28,7 +28,7 @@ class Reflections extends StatelessWidget {
           scaffoldBackgroundColor: Colors.white,
         ),
         // Routes
-        initialRoute: '/',
+        // initialRoute: '/',
         routes: {
           '/': (context) => SignupScreen(),
           '/login': (context) => LoginScreen(),
