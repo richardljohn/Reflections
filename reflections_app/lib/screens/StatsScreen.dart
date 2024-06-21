@@ -6,12 +6,6 @@ class StatsScreen extends StatefulWidget {
 }
 
 class _StatsScreenState extends State<StatsScreen> {
-  final _emailController = TextEditingController();
-  final _passwordController = TextEditingController();
-
-  void _login() {
-    // Logic to handle login will be added later
-  }
 
   @override
   Widget build(BuildContext context) {
