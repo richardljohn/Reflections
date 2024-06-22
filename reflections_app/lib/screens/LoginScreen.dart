@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import '../pages/auth.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -6,11 +8,36 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  String? errorMessage = "";
+  bool isLogin = true;
+
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
 
-  void _login() {
-    // Logic to handle login will be added later
+  Future<void> signInWithEmailandPassword() async {
+    try {
+      await Auth().signInWithEmailAndPassword(
+        email: _emailController.text,
+        password: _passwordController.text,
+      );
+    } on FirebaseAuthException catch (e) {
+      setState(() {
+        errorMessage = e.message;
+      });
+    }
+  }
+
+  Future<void> createUserWithEmailandPassword() async {
+    try {
+      await Auth().createUserWithEmailAndPassword(
+        email: _emailController.text,
+        password: _passwordController.text,
+      );
+    } on FirebaseAuthException catch (e) {
+      setState(() {
+        errorMessage = e.message;
+      });
+    }
   }
 
   @override
@@ -43,7 +70,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: _login,
+              onPressed: signInWithEmailandPassword,
               child: Text('Login'),
             ),
             TextButton(
